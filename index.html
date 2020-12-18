@@ -41,14 +41,14 @@
         </nav>
     </div>
     <main id="main-doc">
-        <div>
+        <div class="section1">
         <section>
             <section class="main-section" id="introduction">
                 <header class="header">Introduction</header>
                 <p>avaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. </p>
                 <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example: </p>
-                <li> Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation. </li>
-                <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. </li>
+                <li class="liste"> Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation. </li>
+                <li class="liste">Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server. </li>
                 <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript. </p>
                 <p> In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods. </p>
                 <code>var x = 42</code>
@@ -57,7 +57,7 @@
             </section>
             </div>
 
-            <div>
+            <div class="section2">
             <section class="main-section" id="hello_world">
                 <header class="header">Hello World</header>
                 <p> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: </p>
@@ -67,12 +67,12 @@
                 <p> You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. </p>
                 <p> A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase). </p>
                 <p> You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. </p>
-                <li> You can declare a variable in three ways: </li>
-                <li> With the keyword var. For example, </li>
+                <li class="liste"> You can declare a variable in three ways: </li>
+                <li class="liste"> With the keyword var. For example, </li>
             </section>
             </div>
 
-            <div>
+            <div class="section3">
             <section class="main-section" id="variable_scope">
                 <header class="header">Variable scope</header>
                 <p> When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function. </p>
@@ -83,12 +83,12 @@
                     defined</code>
                 <p> Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax. </p>
                 <p> Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber. </p>
-                <li>Boolean. true and false.</li>
-                <li> null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant. </li>
+                <li class="liste">Boolean. true and false.</li>
+                <li class="liste"> null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant. </li>
             </section>
             </div>
 
-            <div>
+            <div class="section4">
             <section class="main-section" id="if_else_statement">
                 <header class="header">if... else statement</header>
                 <p> Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows: </p>
@@ -100,12 +100,12 @@
               </code>
                 <p> In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements: </p>
                 <p> It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code: </p>
-                <li>If you need to use an assignment in a conditional expression</li>
-                <li>a common practice is to put additional parentheses around the assignment. For example: </li>
+                <li class="liste">If you need to use an assignment in a conditional expression</li>
+                <li class="liste">a common practice is to put additional parentheses around the assignment. For example: </li>
             </section>
             </div>
 
-            <div>
+            <div class="section5">
             <section class="main-section" id="while_statement">
                 <header class="header">while statement</header>
                 <p> A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows: </p>
@@ -114,8 +114,8 @@
                 <p> The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while. </p>
                 <p> To execute multiple statements, use a block statement ({ ... }) to group those statements. </p>
                 <p> Example: </p>
-                <li>After the first pass: n = 1 and x = 1</li>
-                <li>After the second pass: n = 2 and x = 3</li>
+                <li class="liste">After the first pass: n = 1 and x = 1</li>
+                <li class="liste">After the second pass: n = 2 and x = 3</li>
             </section>
             </div>
         </section>
